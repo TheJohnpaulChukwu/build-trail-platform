@@ -42,3 +42,10 @@
 - Fixed fixture event-loop blocking with asynchronous SQL helpers, ran shared-state suites serially after an accidental overlap, and fixed the vanilla PostgreSQL initialization readiness race using TCP. Added Podman workdir-alias coverage after the real pgTAP runner exposed that CLI argument.
 - Final `npm run verify` passed: 8 tooling tests, 40 unit tests, 14 real integration tests, 62 pgTAP assertions, vanilla PostgreSQL core/replay checks, formatting, lint, strict types and compilation. Combined coverage: 96% statements, 90.52% branches, 100% functions, 96.66% lines; per-file gates passed.
 - Prepared a local implementation commit on `feature/backend-foundation`; nothing pushed or deployed. User's separate frozen CLAUDE.md edit remains unstaged. Hosted OAuth, frontend, learner writes and account-deletion/recovery workflows remain subsequent sections.
+
+### Accepted engineering-rules edits — 2026-11-27 UTC
+
+- User explicitly approved committing their existing edits to `docs/specifications/planning/CLAUDE.md`, overriding the frozen-snapshot restriction for this change.
+- Reviewed the removal of organization-specific introductory material and repository structure references. Preserved the supplied file contents exactly.
+- Documentation-only change; checked the staged diff for whitespace errors. No runtime tests required. Original snapshot hashes remain historical provenance, not a checksum of this approved revision.
+- Committed locally only; no push or deployment.

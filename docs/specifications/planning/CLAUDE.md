@@ -1,12 +1,4 @@
-# claude-engineering — Engineering Rules
 
-This file governs Claude Code's behavior across all Moniepoint engineering repositories.
-
-**How this file is loaded:** This file is part of the eshu plugin, which delivers `claude-engineering` to engineers via `eshu code --plugin-dir`. Claude Code reads it on every session across all repositories.
-
-**Changing this file is Tier 3.** Any modification to `claude-engineering/CLAUDE.md` requires review and approval from at least two engineers, including a Head of Engineering, engineering manager, or principal engineer. Rules govern all AI behavior across all repos.
-
----
 
 ## Domain Rules
 
@@ -15,8 +7,6 @@ Domain-specific rules (data access framework, Tier 3 triggers, naming convention
 ---
 
 ## Legacy Services vs Greenfield
-
-The enforced rules below were designed for greenfield services. Most existing Moniepoint services predate these rules and follow different conventions. When applying rules to existing codebases:
 
 **Greenfield services (new repos):** Enforce all rules from day 1. Use `/bootstrap-service-repo` for correct setup.
 
@@ -538,45 +528,4 @@ Skills are automated, multi-step operations in `claude-engineering/skills/`. Inv
 | | `/generate-service-maintenance`                | Planned maintenance announcement (Markdown + Slack) |
 | | `/resolve-bot-threads`                         | Triage and resolve open bot MR review threads — fix, defer, or reply |
 
----
-
-## Repository Structure Reference
-
-```
-{service}/
-├── claude-engineering/          # Central rules, skills, patterns, templates
-│   ├── CLAUDE.md               # Universal engineering rules (this file)
-│   ├── skills/                 # Skill definitions ({name}/SKILL.md + AGENTS.md)
-│   ├── rules/                  # Standalone enforced rules with YAML frontmatter
-│   ├── templates/              # Spec, ADR, incident templates
-│   │   ├── pipelines/          # Harness CI/CD pipeline templates
-│   │   ├── gitlab/             # GitLab MR template, CODEOWNERS
-│   │   └── measurement/        # DORA, AI adoption, quality dashboards
-│   ├── patterns/               # Shared implementation patterns (33 docs)
-│   ├── plugins/                # Cross-model companion plugins (claude/, gemini/)
-│   ├── process/                # Engineering process, implementation plan, delivery framework
-│   └── scripts/                # install.sh, claude-go, generate-pdfs.sh
-├── adrs/                       # Architecture Decision Records
-├── architecture/               # Architecture documents (Tier 3 to change)
-├── tech-specs/                 # Implementation specs (merged before implementation starts)
-├── src/main/java/
-├── src/test/java/
-└── README.md
-```
-
-**`claude-engineering/`** — Eshu plugin delivered to engineers via `eshu code`. Source of truth for universal rules, skills, patterns, and templates. Domain-specific rules live in each team's project CLAUDE.md.
-
-**`skills/`** — Skill definitions as `{name}/SKILL.md` + `AGENTS.md`. Claude Code discovers them automatically via the `plugin.json` manifest. SKILL.md contains triggers and overview; AGENTS.md contains the full execution protocol.
-
-**`rules/`** — Standalone enforced rule files with YAML frontmatter (title, impact, tags). Extracted from CLAUDE.md for individual referencing and filtering. CLAUDE.md remains the source of truth.
-
-**`templates/`** — Standard templates for implementation specs, ADRs, and incident response. Skills reference these by path.
-
-**`patterns/`** — Registered shared implementation patterns. When a domain deviates from a registered pattern, Claude Code flags it during the pre-PR quality check.
-
-**`plugins/`** — Cross-model companion plugins for adversarial review and task delegation. Each plugin (`claude/`, `gemini/`) has its own companion script, command definitions, and prompt templates. Shells out to the respective CLI for cross-model review. Installed separately from skills — skills are model-agnostic, plugins are model-specific.
-
-**`process/`** — Engineering process specification, implementation plan, and delivery framework. Describes the overall methodology — skills implement it.
-
-**`scripts/`** — CLI utilities: `install.sh` (multi-IDE installer supporting Claude Code, Codex, Cursor, Gemini CLI, and Antigravity), `claude-go` (session launcher), `generate-pdfs.sh` (markdown to PDF).
-
+--
