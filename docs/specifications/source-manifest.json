@@ -1,0 +1,135 @@
+{
+  "source": "BuildTrail planning baseline",
+  "capturedOn": "2026-11-26",
+  "applicationPath": "/home/jchukwu/Documents/code/BuildTrail/build-trail-platform",
+  "files": [
+    {
+      "path": "IMPLEMENTATION_APPLICATION.md",
+      "sha256": "4c80f987ee492f3d3541abed1069b10172f53f3db775c356b70bb61a973094f8"
+    },
+    {
+      "path": "IMPLEMENTATION_DELIVERY_AND_OPERATIONS.md",
+      "sha256": "483d4920659a4799c6b001e11fc1b6f3c5c7b9cb67727b4165ed1bb4dfb0d3b2"
+    },
+    {
+      "path": "IMPLEMENTATION_SPECIFICATIONS.md",
+      "sha256": "a41976e8ed3f21ab10dd0706a2c67f1de114e7c879a90f760e30dc539bd35381"
+    },
+    {
+      "path": "IMPLEMENTATION_DATA_AND_API.md",
+      "sha256": "07991b59807a097a1bd10abfc1d97cf359db01754a20a464f701c19de5ed635d"
+    },
+    {
+      "path": "IMPLEMENTATION_CONTENT_AND_LEARNING.md",
+      "sha256": "eeb688e43416331ed8a924df16f9ea4f6088400114283184e3f9ae3e3e099fb4"
+    },
+    {
+      "path": "planning/09_ACCEPTANCE_AND_QA.md",
+      "sha256": "41c5572b5598095fd6075d406a94cd1474614373f01c584a03e2a909a000e456"
+    },
+    {
+      "path": "planning/07_DEPLOYMENT_AND_OPERATIONS.md",
+      "sha256": "9b4224acc3e17d82ae8d4106e9a9687e2dc27631f4bbf31a6c7b87f56906c1de"
+    },
+    {
+      "path": "planning/04_CONTENT_AND_PUBLIC_STARTER.md",
+      "sha256": "89aeece5a29d824fc9b9719db9ace9c44341cc16579f32c26fb29e2cd529efcf"
+    },
+    {
+      "path": "planning/WEB_APP_BUILD_PLAN.md",
+      "sha256": "eaf90bea64a698e2976ca5e43399c0c07b554fb9c1a7b648a51430ae8bdfd2f8"
+    },
+    {
+      "path": "planning/CLAUDE.md",
+      "sha256": "e1fe786940eecc27012c792f7f586c2f799e8b5860ced1391f5fad2de550a3a3"
+    },
+    {
+      "path": "planning/02_DESIGN_AND_MOBILE_UX.md",
+      "sha256": "244ceaeb781a2d5a84ad64cde8ca74e8860d50a553fda323b2c7c79472185447"
+    },
+    {
+      "path": "planning/README.md",
+      "sha256": "37c2a05961cd0be35c8d6d569a32f8f3e29c9d3f07d7513b722a2bc7669f4f58"
+    },
+    {
+      "path": "planning/CODEX_HANDOFF.md",
+      "sha256": "b415396fd3c25365cad7ff657fd65775b31d1d0f76a101c9b987e3cee01f61ea"
+    },
+    {
+      "path": "planning/WEB_APP_PLAN_REVIEW.md",
+      "sha256": "8036ababb971dcad531725a822c378538bdfb585bfa288131cb0b55aa2e7e418"
+    },
+    {
+      "path": "planning/06_COURSE_UPLOAD_AND_VERSIONING.md",
+      "sha256": "ff86d0c984b0cd7048c17f0e7e22c82818b37cecc963b584a4b3a660498d8684"
+    },
+    {
+      "path": "planning/03_LEARNING_AND_VISUALS.md",
+      "sha256": "61619b99a3b224c959b27aec8c3fcade44fde1eeff5cd39590c33d570edd19fd"
+    },
+    {
+      "path": "planning/01_PRODUCT_AND_SCOPE.md",
+      "sha256": "a8163b7d70f9d6a489ecff5c7bd3497424b337a4307be15c7c8a1127e17dd60f"
+    },
+    {
+      "path": "planning/05_AUTH_DATA_AND_SYNC.md",
+      "sha256": "284fc1730faceddbfb0fa700915a9843fc11ef7cd2b19446a8b47ca9496a3a47"
+    },
+    {
+      "path": "planning/08_BUILD_SEQUENCE_AND_HANDOFF.md",
+      "sha256": "6eac6274e691a00dda071b931249024f583c08580f733fe9d62a686b640c3e3e"
+    },
+    {
+      "path": "planning/technical/01_STACK_AND_DECISIONS.md",
+      "sha256": "2cf2bf975e38943900d21657083581724627527b1c379d0691e891e54e298289"
+    },
+    {
+      "path": "planning/technical/05_CONTENT_AND_PUBLISHING.md",
+      "sha256": "4215254201eacaa2ef189b12bd2c161496c1f01cbc228530a6a3161aef56d187"
+    },
+    {
+      "path": "planning/technical/08_CODE_AND_OBJECT_DESIGN.md",
+      "sha256": "37ed0ec4c828bcc873046cf9712728970f0c9b42fc6fbaf9c94f3b3f89150bbe"
+    },
+    {
+      "path": "planning/technical/06_FRONTEND_AND_VISUALS.md",
+      "sha256": "f1c60e428c26eb1fde3131e6ee57bcf1d6ca1b9562b35dfe17f6c7e587c6a924"
+    },
+    {
+      "path": "planning/technical/11_IMPLEMENTATION_PLAN.md",
+      "sha256": "6b497f1a775bf20292d990b349fb7066e6acdd4fdc3d9c6d7794703081e0d361"
+    },
+    {
+      "path": "planning/technical/README.md",
+      "sha256": "9fde29ab0484adceefaa5d0c1f6ac80a532217b6bc22c3f86d3fb2dbc5d60292"
+    },
+    {
+      "path": "planning/technical/03_DATABASE_AND_AUTHORIZATION.md",
+      "sha256": "6f5283a2352a5b8162bd87ab02b3d59b744d1141ba20b45e0232511207c0ca1d"
+    },
+    {
+      "path": "planning/technical/10_INFRASTRUCTURE_AND_OPERATIONS.md",
+      "sha256": "952d13df25eac24273bf943f213f640f31163196dce9102bc4f512038ea23a44"
+    },
+    {
+      "path": "planning/technical/09_TESTING_AND_QUALITY.md",
+      "sha256": "d680ebdab543c88954937f41b7fc570d6bdd68e68cb9687f074da53319891f21"
+    },
+    {
+      "path": "planning/technical/04_API_AND_SYNC.md",
+      "sha256": "f3e5596160d0e362da20910b08db047f6c840f5877ef8a559e70d8354615b39a"
+    },
+    {
+      "path": "planning/technical/07_SECURITY_AND_PRIVACY.md",
+      "sha256": "fe20b00f0353c57453de3563b184dd37d97d82eb66d27d998b4e530cea16bf4a"
+    },
+    {
+      "path": "planning/technical/12_DECISIONS_AND_SOURCES.md",
+      "sha256": "f070d2a90b0a910b52bb7602e4bd2519a046b3f663f00efb09323f095d2679b3"
+    },
+    {
+      "path": "planning/technical/02_ARCHITECTURE.md",
+      "sha256": "4fe16ef0cee909e9163b8788d0f8495e3bb381ee37572013bea40e727ae92662"
+    }
+  ]
+}
