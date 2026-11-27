@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+docs/specifications
+package-lock.json
+supabase/.temp
+.local
+src/contracts/database.types.ts
+docs/branching-and-commit-policy.md

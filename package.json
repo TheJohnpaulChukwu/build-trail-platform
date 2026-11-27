@@ -1,0 +1,50 @@
+{
+  "name": "build-trail-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x",
+    "npm": "11.x"
+  },
+  "packageManager": "npm@11.19.0",
+  "dependencies": {
+    "@supabase/supabase-js": "2.119.2",
+    "zod": "4.6.7"
+  },
+  "scripts": {
+    "dev": "tsx --env-file-if-exists=.env server/local.ts",
+    "dev:api": "npm run dev",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "node scripts/test-integration.mjs",
+    "test:db": "node scripts/supabase.mjs test db",
+    "test:coverage": "node scripts/test-integration.mjs --coverage",
+    "db:start": "npm run db:check && node scripts/supabase.mjs start && npm run db:configure-local",
+    "db:stop": "node scripts/supabase.mjs stop",
+    "db:reset": "npm run db:check && node scripts/supabase.mjs db reset --local && npm run db:configure-local",
+    "db:types": "node scripts/database-types.mjs",
+    "verify": "npm run db:check && npm run test:tooling && npm run format:check && npm run lint && npm run typecheck && npm run test:unit && npm run test:core-db && npm run test:db && npm run test:coverage && npm run build",
+    "test:tooling": "node --test scripts/*.test.mjs",
+    "db:prepare": "node scripts/prepare-migrations.mjs",
+    "db:check": "node scripts/prepare-migrations.mjs --check",
+    "db:configure-local": "node scripts/configure-local-auth.mjs",
+    "test:core-db": "node scripts/test-core-db.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.4",
+    "@vitest/coverage-v8": "5.1.2",
+    "eslint": "10.15.0",
+    "prettier": "3.10.1",
+    "supabase": "3.4.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.74.0",
+    "vitest": "5.1.2"
+  }
+}
